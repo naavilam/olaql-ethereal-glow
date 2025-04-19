@@ -36,7 +36,7 @@ const ContactForm = () => {
             </h2>
             
             <p className="text-center text-foreground/80 mb-8">
-              Estamos ansiosos para transformar sua visão em realidade com nossa inteligência quântica.
+              Estamos ansiosos para transformar sua visão em realidade com a inteligência de Aprendizado Quântico.
             </p>
             
             <form onSubmit={handleSubmit} className="space-y-6">

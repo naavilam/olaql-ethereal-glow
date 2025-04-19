@@ -20,7 +20,7 @@ const Manifesto = () => {
             </p>
             
             <p className="leading-relaxed fade-in-section">
-              <span className="block text-gradient-lilac">Engenharia do aprendizado quântico aplicado para sistemas reais.</span>
+              <span className="block text-gradient-lilac">Engenharia de aprendizado quântico aplicada para sistemas reais.</span>
             </p>
           </div>
         </div>
