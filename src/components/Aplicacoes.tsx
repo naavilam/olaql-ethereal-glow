@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Flask, Building, Atom, Dna } from 'lucide-react';
+import { Beaker, Building, Atom, Dna } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
@@ -42,7 +42,7 @@ const Aplicacoes = () => {
     {
       title: "Fármacos",
       description: "Nossa inteligência quântica otimiza o desenvolvimento de medicamentos, reduzindo custos e tempo de pesquisa.",
-      icon: Flask,
+      icon: Beaker,
       delay: "0.4s"
     },
     {
