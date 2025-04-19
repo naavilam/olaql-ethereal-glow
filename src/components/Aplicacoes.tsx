@@ -15,17 +15,17 @@ interface AplicacaoProps {
 const AplicacaoCard = ({ title, description, icon: Icon, className, delay }: AplicacaoProps) => {
   return (
     <Card className={cn(
-      "border-white/20 bg-white/40 backdrop-blur-sm hover:bg-white/50 transition-all duration-300 h-full opacity-0 animate-fade-in",
+      "border-white/10 bg-white/10 backdrop-blur-xl hover:bg-white/15 transition-all duration-500 h-full opacity-0 animate-fade-in",
       className
     )} style={{ animationDelay: delay }}>
       <CardHeader className="pb-2">
-        <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-olaql-lilac to-olaql-blue flex items-center justify-center mb-4">
-          <Icon className="h-6 w-6 text-white" />
+        <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-purple-400/90 via-olaql-lilac to-olaql-blue flex items-center justify-center mb-4 shadow-lg">
+          <Icon className="h-7 w-7 text-white" />
         </div>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className="text-white text-xl">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-foreground/70 text-base">{description}</CardDescription>
+        <CardDescription className="text-white/80 text-base">{description}</CardDescription>
       </CardContent>
     </Card>
   );
@@ -60,15 +60,15 @@ const Aplicacoes = () => {
   ];
 
   return (
-    <section id="aplicacoes" className="section-padding relative overflow-hidden">
-      <div className="absolute -top-40 left-1/2 w-96 h-96 bg-olaql-blue/10 rounded-full blur-3xl"></div>
+    <section id="aplicacoes" className="section-padding relative overflow-hidden fade-in-section">
+      <div className="absolute -top-40 left-1/2 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
       
       <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center text-white">
           Aplicações
         </h2>
         
-        <p className="text-xl text-center mb-12 max-w-3xl mx-auto text-foreground/80">
+        <p className="text-xl text-center mb-16 max-w-3xl mx-auto text-white/80">
           Nossa inteligência quântica transforma diversos campos através de soluções inovadoras.
         </p>
         

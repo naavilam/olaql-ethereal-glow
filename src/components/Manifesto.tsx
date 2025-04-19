@@ -3,32 +3,32 @@ import React from 'react';
 
 const Manifesto = () => {
   return (
-    <section id="manifesto" className="section-padding relative overflow-hidden">
+    <section id="manifesto" className="section-padding relative overflow-hidden fade-in-section">
       <div className="container">
-        <div className="glass-card p-8 md:p-12 lg:p-16 max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-xl p-8 md:p-12 lg:p-16 max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-white">
             Manifesto
           </h2>
           
-          <div className="space-y-8 text-xl md:text-2xl font-light text-center">
-            <p className="leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Simulamos a realidade com gentileza.
+          <div className="space-y-12 text-xl md:text-2xl font-light text-center">
+            <p className="leading-relaxed fade-in-section">
+              <span className="block text-gradient-purple">Simulamos a realidade com gentileza.</span>
             </p>
             
-            <p className="leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              Aprendemos com o invisível para transformar o visível.
+            <p className="leading-relaxed fade-in-section">
+              <span className="block text-gradient-blue">Aprendemos com o invisível para transformar o visível.</span>
             </p>
             
-            <p className="leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              olaQL é leve por fora, essencial por dentro.
+            <p className="leading-relaxed fade-in-section">
+              <span className="block text-gradient-lilac">olaQL é leve por fora, essencial por dentro.</span>
             </p>
           </div>
         </div>
       </div>
       
-      {/* Background circle */}
-      <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-olaql-blue/10 rounded-full blur-3xl"></div>
-      <div className="absolute -top-24 -left-24 w-48 h-48 bg-olaql-lilac/10 rounded-full blur-3xl"></div>
+      {/* Background elements */}
+      <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute -top-24 -left-24 w-72 h-72 bg-olaql-blue/10 rounded-full blur-3xl"></div>
     </section>
   );
 };

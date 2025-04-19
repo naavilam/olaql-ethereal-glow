@@ -34,7 +34,7 @@
   }
 
   body {
-    @apply bg-gradient-to-br from-olaql-white to-olaql-sand text-foreground font-inter;
+    @apply bg-gradient-to-br from-purple-900/90 via-indigo-800/80 to-indigo-900/90 text-foreground font-inter;
     scroll-behavior: smooth;
   }
   
@@ -47,11 +47,23 @@
   }
   
   .section-padding {
-    @apply py-20 md:py-28;
+    @apply py-24 md:py-32;
   }
   
   .glass-card {
-    @apply bg-white/50 backdrop-blur-md rounded-2xl border border-white/20;
+    @apply bg-white/10 backdrop-blur-md rounded-2xl border border-white/10;
+  }
+  
+  .text-gradient-purple {
+    @apply bg-gradient-to-r from-purple-300 via-pink-200 to-purple-300 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-blue-300 via-cyan-200 to-blue-300 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-lilac {
+    @apply bg-gradient-to-r from-olaql-lilac via-white to-olaql-lilac bg-clip-text text-transparent;
   }
   
   .animated-gradient {
@@ -70,5 +82,25 @@
     100% {
       background-position: 0% 50%;
     }
+  }
+  
+  /* Additional animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+    }
+    25% {
+      transform: translateY(-10px) translateX(5px);
+    }
+    50% {
+      transform: translateY(0) translateX(10px);
+    }
+    75% {
+      transform: translateY(10px) translateX(5px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 10s infinite ease-in-out;
   }
 }

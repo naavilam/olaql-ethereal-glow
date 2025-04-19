@@ -9,21 +9,24 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   useEffect(() => {
-    // Função para animar elementos quando eles ficam visíveis
+    // Create intersection observer for smooth animations on scroll
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate-fade-in');
+            entry.target.style.opacity = '1';
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.15, rootMargin: '0px 0px -100px 0px' }
     );
 
-    // Selecionar elementos que deverão ser animados
-    document.querySelectorAll('.fade-in-trigger').forEach((el) => {
+    // Select sections to animate
+    const animatedElements = document.querySelectorAll('.fade-in-section');
+    animatedElements.forEach((el) => {
+      el.classList.add('opacity-0');
       observer.observe(el);
     });
 
