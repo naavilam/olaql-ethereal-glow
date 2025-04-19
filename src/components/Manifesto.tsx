@@ -12,15 +12,15 @@ const Manifesto = () => {
           
           <div className="space-y-12 text-xl md:text-2xl font-light text-center">
             <p className="leading-relaxed fade-in-section">
-              <span className="block text-gradient-purple">Quantum Learning Essencial</span>
+              <span className="block text-gradient-purple">Quantum Learning essencial.</span>
             </p>
             
             <p className="leading-relaxed fade-in-section">
-              <span className="block text-gradient-blue">Leve por fora, revolucionaria por dentro</span>
+              <span className="block text-gradient-blue">Leve por fora, revolucionaria por dentro.</span>
             </p>
             
             <p className="leading-relaxed fade-in-section">
-              <span className="block text-gradient-lilac">Engenharia do aprendizado quantico aplicado para sistemas reais</span>
+              <span className="block text-gradient-lilac">Engenharia do aprendizado quântico aplicado para sistemas reais.</span>
             </p>
           </div>
         </div>
