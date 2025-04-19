@@ -16,7 +16,7 @@ const Manifesto = () => {
             </p>
             
             <p className="leading-relaxed fade-in-section">
-              <span className="block text-gradient-blue">Leve por fora, revolucionaria por dentro.</span>
+              <span className="block text-gradient-blue">Leve por fora, revolucionária por dentro.</span>
             </p>
             
             <p className="leading-relaxed fade-in-section">
