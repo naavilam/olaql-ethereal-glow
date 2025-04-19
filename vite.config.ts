@@ -25,7 +25,7 @@ import { componentTagger } from "lovable-tagger";
 
 
 export default defineConfig({
-  base: '/olaql-ethereal-glow/',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
